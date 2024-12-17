@@ -1,9 +1,14 @@
+body{
+  background-color: var(--main-background-color);
+}
+
 
 nav{
   align-items: center;
   font-family: var(--font-title);
   font-weight: 400;
 }
+
 
 .navLink{
   display: flex;
@@ -40,6 +45,7 @@ nav{
 
 .textBox h2{
   margin-bottom: 0.7rem;
+  color: var(--font-title-color);
 }
 
 .entryVideo{
@@ -138,10 +144,11 @@ nav{
   font-family: var(--font-title);
   font-weight: 450;
   font-size: var(--font-title-sizeM);
+  color: var(--font-title-color);
 }
 
 .technoGif{
-  width: 50%;
+  width: 55%;
 }
 
 .hardSkills {
@@ -171,6 +178,7 @@ nav{
   text-align: center;
   font-family: var(--font-title);
   font-size: var(--font-title-sizeM);
+  color: var(--font-title-color);
 }
 
 .iconeSkills{
@@ -213,6 +221,7 @@ li{
   font-size: var(--font-title-sizeM);
   font-family: var(--font-title);
   text-align: left;
+  color: var(--font-title-color);
 }
 
 .projectContainer:hover .card:not(.card:hover){

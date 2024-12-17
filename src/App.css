@@ -1,10 +1,26 @@
+@font-face {
+  font-family: 'Faculty';
+  src: url('./src/assets/Fonts/FacultyGlyphic-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./src/assets/Fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root{
-  --font-text : "Ubuntu";
-  --font-title: "Kanit";
+  --font-text : "Poppins";
+  --font-title: "Faculty";
   --font-title-sizeM: 1.5rem;
   --font-title-sizeS: 1.3rem;
+  --font-title-color: #5D89BA;
   --font-text-size: 1rem;
   --padding-rem: 1rem;
+  --main-background-color: #F0F8FF;
 }
 
 *{

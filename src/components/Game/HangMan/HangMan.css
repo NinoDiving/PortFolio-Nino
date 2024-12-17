@@ -1,0 +1,13 @@
+.letter-container{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  height: 10rem;
+  gap: 2px;
+}
+
+.letter{
+  font-size: var(--font-title-sizeM);
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: lightblue;
+}

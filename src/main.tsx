@@ -3,10 +3,12 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
+import GamePage from "./components/Game/GamePage/GamePage";
+import HangMan from "./components/Game/HangMan/HangMan";
+import TicTacToe from "./components/Game/TicTacToe/TicTacToe";
 import HomePage from "./components/HomePage/HomePage";
 import BordeauxQuizz from "./components/Projets/Bordeaux-Quizz/BordeauxQuizz";
 import Netflux from "./components/Projets/Netflux/Netflux";
-import ToDoList from "./components/Projets/ToDoList/ToDoList";
 import "./index.css";
 const router = createBrowserRouter([
 	{
@@ -26,8 +28,16 @@ const router = createBrowserRouter([
 				element: <Netflux />,
 			},
 			{
-				path: "/todolist",
-				element: <ToDoList />,
+				path: "/jeux",
+				element: <GamePage />,
+			},
+			{
+				path: "/tictactoe",
+				element: <TicTacToe />,
+			},
+			{
+				path: "/jeudupendu",
+				element: <HangMan />,
 			},
 			{
 				path: "/projet3",

@@ -28,6 +28,7 @@ font-family: var(--font-title);
 text-align: center;
 padding: var(--padding-rem);
 animation: tracking-in-expand 2.5s ease-in-out;
+color: var(--font-title-color);
 }
 
 .bordeaux_header p{

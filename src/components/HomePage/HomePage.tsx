@@ -1,5 +1,5 @@
 import HardSkills from "./HardSkills/HardSkills";
-import Project from "./Projet/Project";
+import Project from "./ProjetCarousel/Project";
 export default function HomePage() {
 	return (
 		<>
@@ -27,7 +27,7 @@ export default function HomePage() {
 					</svg>
 					<article className="midContent">
 						<section className="textBox">
-							<h2 className="mt-4">Enchanté je m'appelle Nino !</h2>
+							<h2 className="mt-4">Enchanté je m'appelle Nino </h2>
 							<img
 								className="ninoPic"
 								src="./src/assets/images/PhotoCV.png"

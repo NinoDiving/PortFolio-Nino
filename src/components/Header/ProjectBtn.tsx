@@ -13,7 +13,7 @@ const solutions = [
 		description:
 			"Un jeu avec 2 modes de difficultés et 10questions sur la ville de Bordeaux.",
 		href: "/bordeauxquizz",
-		icon: PuzzlePieceIcon,
+		icon: ListBulletIcon,
 	},
 	{
 		name: "Netflux",
@@ -23,10 +23,10 @@ const solutions = [
 		icon: FilmIcon,
 	},
 	{
-		name: "toDoList",
+		name: "Jeux",
 		description: "Application avec une interface ToDoList, Calendrier et Timer",
-		href: "/todolist",
-		icon: ListBulletIcon,
+		href: "/jeux",
+		icon: PuzzlePieceIcon,
 	},
 	{
 		name: "Projet 3",
