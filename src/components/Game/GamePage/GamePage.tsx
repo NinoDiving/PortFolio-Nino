@@ -5,6 +5,7 @@ export default function GamePage() {
 	return (
 		<>
 			<h1 className="titlePageGame">Quelques Side-Project pour s'amuser</h1>
+			<h2>Découvrez mes jeux en cliquant sur les images</h2>
 			<main className="game-container">
 				{gameArray.map((game) => (
 					<article key={game.id} className="game-card">

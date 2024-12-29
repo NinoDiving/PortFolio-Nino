@@ -35,18 +35,13 @@ nav{
 }
 
 .textBox{
-  box-shadow: -1px 2px 13px 1px #00000038;
   margin: 2rem;
-  width: 50%;
-  padding: 1rem;
+  width: 40ch;
+  padding: var(--padding-rem);
   border-radius: 15px;
   justify-items: center;
 }
 
-.textBox h2{
-  margin-bottom: 0.7rem;
-  color: var(--font-title-color);
-}
 
 .entryVideo{
   position: relative;
@@ -126,29 +121,37 @@ nav{
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 80ch;
+  width: 100%;
 }
 .ninoPic{
-  border: 4px solid rgb(32, 29, 29);
+  border: 5px solid rgba(32, 29, 29, 0.384);
   border-radius: 50%;
-  width: 40%;
+  width: 50%;
   animation: bounce-top 2s linear;
 }
 
 .midContent p{
   font-family: var(--font-text);
-  font-weight: 400;
+  padding-top: 1rem;
+  font-size: 1.3rem
+}
+
+.cvNino{
+  color: rgba(0, 0, 255, 0.651);
 }
 
 .midContent h2{
   font-family: var(--font-title);
-  font-weight: 450;
-  font-size: var(--font-title-sizeM);
+  font-size: var(--font-title-sizeXL);
   color: var(--font-title-color);
+  padding: var(--padding-rem);
+}
+.textBox{
+  width: 40ch;
 }
 
 .technoGif{
-  width: 55%;
+  width: 80%;
 }
 
 .hardSkills {
@@ -201,10 +204,39 @@ li{
   font-weight:400 ;
 }
 
+.more-about-me{
+  text-align: center;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s ease; 
+}
+
+.more-about-me.active {
+  opacity: 1;
+  transform: translateY(0); 
+}
+.more-about-me h2{
+font-size: var(--font-title-sizeM);
+color: var(--font-title-color);
+font-family: var(--font-title);
+padding: var(--padding-rem);
+}
+
+
+.btn-more{
+  box-shadow: 1px 1px 9px 1px #0000002b;
+  padding: var(--padding-rem);
+  width: 80%;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-family: var(--font-text);
+  cursor: pointer;
+}
+
 .projectContainer{
   display: flex;
   width: 100%;
-  height: 15rem;
+  height: 100%;
   gap: 1rem;
   padding: 1rem;
   opacity: 0;
@@ -357,3 +389,4 @@ footer{
     transform: translateY(0%) scale(1);
   }
 }
+

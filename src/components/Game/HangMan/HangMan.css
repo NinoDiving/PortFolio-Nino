@@ -1,3 +1,7 @@
+
+.board-game{
+  padding: var(--padding-rem);
+}
 .letter-container{
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -10,4 +14,27 @@
   border: 1px solid black;
   border-radius: 10px;
   background-color: lightblue;
+}
+.answer-container{
+  text-align: center;
+  font-size: var(--font-title-sizeXL);
+  padding: var(--padding-rem);
+}
+
+.btn-container{
+  padding: var(--padding-rem);
+  display: flex;
+  gap: 0.3rem;
+}
+
+.delete-btn{
+  border: 1px solid black;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.next-btn{
+  border: 1px solid black;
+  width: 50%;
+  border-radius: 10px;
 }

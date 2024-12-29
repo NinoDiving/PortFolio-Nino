@@ -15,10 +15,10 @@
 :root{
   --font-text : "Poppins";
   --font-title: "Faculty";
+  --font-title-sizeXL: 2rem;
   --font-title-sizeM: 1.5rem;
   --font-title-sizeS: 1.3rem;
   --font-title-color: #5D89BA;
-  --font-text-size: 1rem;
   --padding-rem: 1rem;
   --main-background-color: #F0F8FF;
 }

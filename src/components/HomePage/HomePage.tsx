@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
+import useIntersectionObserver from "../../Service/AnimationScroll/AnimationScroll";
 import HardSkills from "./HardSkills/HardSkills";
 import Project from "./ProjetCarousel/Project";
 export default function HomePage() {
+	const { ref: sectionRef, isVisible } = useIntersectionObserver(0.1);
 	return (
 		<>
 			<main className="flex flex-col items-center justify-center">
@@ -27,25 +30,25 @@ export default function HomePage() {
 					</svg>
 					<article className="midContent">
 						<section className="textBox">
-							<h2 className="mt-4">Enchanté je m'appelle Nino </h2>
+							<h2>Enchanté je m'appelle Nino </h2>
 							<img
 								className="ninoPic"
 								src="./src/assets/images/PhotoCV.png"
 								alt="Profile Nino"
 							/>
 							<p>
-								Passionné par l'informatique depuis mon enfance, j'ai relevé le
-								défi, à 27 ans, de devenir développeur Web. Depuis mes premiers
-								pas dans le monde numérique, j'ai toujours été fasciné par la
-								manière dont les technologies transforment notre quotidien.
-								Aujourd'hui, dans un secteur aussi dynamique que compétitif, je
-								cherche à me démarquer en mettant l'accent sur l'originalité, la
-								créativité. Au-delà de la simple ligne de code, c'est
-								l'expérience utilisateur que je vise à améliorer : chaque projet
-								est une occasion de créer quelque chose d'unique, fonctionnel et
-								esthétique. <br /> Plutôt que vous montrez une simple page de CV
-								(même si j'en ai un, bien sûr 😉). Je vous propose mon premier
-								PortFolio !
+								Plutôt que de me limiter à une simple page de CV (même si j'en
+								ai un bien sûr ➡️{" "}
+								<a
+									className="cvNino"
+									href="src\assets\images\CV Jautee Nino FR.pdf"
+									download="CV-Jautee-Nino"
+								>
+									Mon CV téléchargeable
+								</a>{" "}
+								), je vous propose de découvrir mon tout premier portfolio. À
+								travers celui-ci, je souhaite vous plonger dans mon univers et
+								partager ma vision du développement web.
 							</p>
 						</section>
 						<video
@@ -58,6 +61,20 @@ export default function HomePage() {
 					</article>
 				</section>
 				<HardSkills />
+				<section
+					ref={sectionRef}
+					className={`more-about-me ${isVisible ? "active" : ""}`}
+				>
+					<h2>Vous voulez me connaître un peu plus ?</h2>
+					<button className="btn-more" type="button">
+						Oui j'aimerai bien !
+					</button>
+					<Link to="/jeux">
+						<button className="btn-more" type="button">
+							Non, je veux juste voir tes projets !
+						</button>
+					</Link>
+				</section>
 				<Project />
 			</main>
 		</>
