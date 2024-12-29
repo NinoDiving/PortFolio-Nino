@@ -233,6 +233,29 @@ padding: var(--padding-rem);
   cursor: pointer;
 }
 
+#spring-modal-description{
+  font-family: var(--font-text);
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+#second-modal-description{
+  font-family: var(--font-text);
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+
+.modal-btn{
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 2px #6b728047;
+  width: 60%;
+  font-family: var(--font-text);
+  padding: 0.4rem;
+  border-radius: 10px;
+  background-color: var(--main-background-color);
+}
+
 .projectContainer{
   display: flex;
   width: 100%;
