@@ -5,15 +5,7 @@ import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
 import { animated, useSpring } from "@react-spring/web";
 import { cloneElement, forwardRef, useState } from "react";
-
-interface FadeProps {
-	children: React.ReactElement<any>;
-	in?: boolean;
-	onClick?: any;
-	onEnter?: (node: HTMLElement, isAppearing: boolean) => void;
-	onExited?: (node: HTMLElement, isAppearing: boolean) => void;
-	ownerState?: any;
-}
+import type { FadeProps } from "../../../Types/Modal/FadeProps";
 
 const Fade = forwardRef<HTMLDivElement, FadeProps>(function Fade(props, ref) {
 	const {

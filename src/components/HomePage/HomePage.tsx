@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import useIntersectionObserver from "../../Service/AnimationScroll/AnimationScroll";
+import BasicForm from "./ContactForm/ContactForm";
 import HardSkills from "./HardSkills/HardSkills";
 import SpringModal from "./Modal/Modal";
 import Project from "./ProjetCarousel/Project";
@@ -31,7 +32,8 @@ export default function HomePage() {
 					</svg>
 					<article className="midContent">
 						<section className="textBox">
-							<h2>Enchanté je m'appelle Nino </h2>
+							<h2>Enchanté</h2>
+							<h2>je m'appelle Nino</h2>
 							<img
 								className="ninoPic"
 								src="./src/assets/images/PhotoCV.png"
@@ -75,6 +77,10 @@ export default function HomePage() {
 					</Link>
 				</section>
 				<Project />
+				<section className="contact">
+					<h2>Venez parlez tech !</h2>
+					<BasicForm />
+				</section>
 			</main>
 		</>
 	);
