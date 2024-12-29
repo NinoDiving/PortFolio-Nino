@@ -127,6 +127,7 @@ nav{
   border: 5px solid rgba(32, 29, 29, 0.384);
   border-radius: 50%;
   width: 50%;
+  margin: var(--padding-rem);
   animation: bounce-top 2s linear;
 }
 
@@ -141,10 +142,10 @@ nav{
 }
 
 .midContent h2{
+  text-align: center;
   font-family: var(--font-title);
   font-size: var(--font-title-sizeXL);
   color: var(--font-title-color);
-  padding: var(--padding-rem);
 }
 .textBox{
   width: 40ch;
@@ -298,6 +299,14 @@ padding: var(--padding-rem);
 .card:hover{
   transform: scale(1.3);
   z-index: 1;
+}
+
+.contact h2{
+  padding: var(--padding-rem);
+  text-align: center;
+  font-family: var(--font-title);
+  color: var(--font-title-color);
+  font-size: var(--font-title-sizeM);
 }
 
 footer{
