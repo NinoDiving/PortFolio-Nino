@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import useIntersectionObserver from "../../Service/AnimationScroll/AnimationScroll";
 import HardSkills from "./HardSkills/HardSkills";
+import SpringModal from "./Modal/Modal";
 import Project from "./ProjetCarousel/Project";
 export default function HomePage() {
 	const { ref: sectionRef, isVisible } = useIntersectionObserver(0.1);
@@ -66,9 +67,7 @@ export default function HomePage() {
 					className={`more-about-me ${isVisible ? "active" : ""}`}
 				>
 					<h2>Vous voulez me connaître un peu plus ?</h2>
-					<button className="btn-more" type="button">
-						Oui j'aimerai bien !
-					</button>
+					<SpringModal />
 					<Link to="/jeux">
 						<button className="btn-more" type="button">
 							Non, je veux juste voir tes projets !
