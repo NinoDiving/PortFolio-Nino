@@ -12,6 +12,7 @@ Hello! My name is **Jautee Nino**, and I am a web developer with a strong intere
 - **Interactive Introduction**: Dive into my world through an animated video and glitch effects, offering a creative overview of who I am.
 - **Hard Skills Section**: Explore the technologies and tools I master.
 - **Projects Showcase**: Discover my key projects, ranging from quiz games to movie information platforms.
+- **Mini-Games Section**: Try out emblematic games, crafted by my own hands!
 - **Contact Section**: Feel free to reach out and discuss technology with me!
 
 ---
@@ -25,7 +26,7 @@ A quiz game featuring 10 questions about the city of Bordeaux, with two difficul
 A platform to explore the latest movies and get detailed information about them.
 
 ### [Jeux](https://github.com/jautee/jeux)
-An application with an interface for a To-Do List, Calendar, and Timer.
+An application with multiples games.
 
 ### **Project 3** (Work in Progress)
 A new project currently under development. Stay tuned for updates!
