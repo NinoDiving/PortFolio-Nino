@@ -19,7 +19,7 @@ nav{
 
 .header{
   width: 100%;
-  background-color: #effffa9f;
+  background-color: #F0F8FF;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -133,8 +133,8 @@ nav{
 
 .midContent p{
   font-family: var(--font-text);
-  padding-top: 1rem;
-  font-size: 1.3rem
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem
 }
 
 .cvNino{
@@ -259,11 +259,8 @@ padding: var(--padding-rem);
 }
 
 .projectContainer{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  gap: 1rem;
-  padding: 1rem;
+  padding-top: var(--padding-rem);
+  padding-bottom: var(--padding-rem);
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -281,10 +278,6 @@ padding: var(--padding-rem);
   color: var(--font-title-color);
 }
 
-.projectContainer:hover .card:not(.card:hover){
-  transform: scale(0.9);
-  filter: saturate(0) blur(4px) brightness(0.5);
-}
 
 .card{
   width:100%;
@@ -297,10 +290,6 @@ padding: var(--padding-rem);
   border-radius: 8px;
 }
 
-.card:hover{
-  transform: scale(1.3);
-  z-index: 1;
-}
 
 .contact h2{
   padding: var(--padding-rem);
