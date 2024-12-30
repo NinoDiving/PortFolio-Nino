@@ -40,17 +40,19 @@ export default function HomePage() {
 								alt="Profile Nino"
 							/>
 							<p>
-								Plutôt que de me limiter à une simple page de CV (même si j'en
-								ai un bien sûr ➡️{" "}
+								Plutôt que de me limiter à une simple page de CV même si j'en ai
+								un bien sûr ➡️{" "}
 								<a
 									className="cvNino"
 									href="src\assets\images\CV Jautee Nino FR.pdf"
 									download="CV-Jautee-Nino"
 								>
-									Mon CV téléchargeable
+									téléchargez mon CV
 								</a>{" "}
-								), je vous propose de découvrir mon tout premier portfolio. À
-								travers celui-ci, je souhaite vous plonger dans mon univers et
+								Je vous propose de découvrir mon tout premier portfolio.
+							</p>
+							<p>
+								À travers celui-ci, je souhaite vous plonger dans mon univers et
 								partager ma vision du développement web.
 							</p>
 						</section>
