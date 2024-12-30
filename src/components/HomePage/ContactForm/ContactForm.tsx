@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { type FormEvent, useState } from "react";
 import "./Form.css";
+import useIntersectionObserver from "../../../Service/AnimationScroll/AnimationScroll";
 export default function BasicForm() {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
-
+	const { ref: sectionRef, isVisible } = useIntersectionObserver(0.1);
 	const [error, setError] = useState("");
 
-	function onSubmit(e) {
+	function onSubmit(e: FormEvent<HTMLFormElement>) {
 		e.preventDefault();
 		e.stopPropagation();
 
@@ -38,7 +39,10 @@ export default function BasicForm() {
 	}
 
 	return (
-		<section className="formcarry-container">
+		<section
+			ref={sectionRef}
+			className={`formcarry-container ${isVisible ? "active" : ""}`}
+		>
 			<form onSubmit={(e) => onSubmit(e)}>
 				<div className="formcarry-block">
 					<label htmlFor="name">Nom & Prénom</label>
@@ -69,7 +73,9 @@ export default function BasicForm() {
 						onChange={(e) => setMessage(e.target.value)}
 						id="message"
 						placeholder="Entrez votre message..."
-					></textarea>
+					>
+						d
+					</textarea>
 				</div>
 
 				<div className="formcarry-block">

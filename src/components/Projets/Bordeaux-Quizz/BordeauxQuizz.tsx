@@ -2,13 +2,14 @@ import "/src/App.css";
 import useIntersectionObserver from "../../../Service/AnimationScroll/AnimationScroll";
 import "./bordeaux.css";
 export default function BordeauxQuizz() {
-	const { ref: sectionRef, isVisible } = useIntersectionObserver(0.1);
+	const headerObserver = useIntersectionObserver(0.1);
+	const stackObserver = useIntersectionObserver(0.1);
 	return (
 		<>
 			<main>
 				<section
-					ref={sectionRef}
-					className={`bordeaux_header ${isVisible ? "active" : ""}`}
+					ref={headerObserver.ref}
+					className={`bordeaux_header ${headerObserver.isVisible ? "active" : ""}`}
 				>
 					<h1>Projet Bordeaux-Quizz</h1>
 					<img
@@ -31,15 +32,18 @@ export default function BordeauxQuizz() {
 						futurs projets.
 					</p>
 				</section>
-				<section className="bordeaux_stack">
+				<section
+					ref={stackObserver.ref}
+					className={`bordeaux_stack ${stackObserver.isVisible ? "active" : ""}`}
+				>
 					<h2>
 						Pour réaliser ce projet, j'ai mis en œuvre les technologies
 						suivantes :
 					</h2>
 					<div className="stack_container">
-						<img src="/src/assets/images/iconeJs.png" alt="JavaScript" />
-						<img src="/src/assets/images/iconeCss.png" alt="Css" />
-						<img src="/src/assets/images/iconeHtml.png" alt="" />
+						<img src="/src/assets/images/iconeJS.svg" alt="JavaScript" />
+						<img src="/src/assets/images/iconeCSS.svg" alt="Css" />
+						<img src="/src/assets/images/iconeHTML.svg" alt="Html" />
 					</div>
 				</section>
 			</main>
