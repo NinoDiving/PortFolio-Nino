@@ -24,13 +24,13 @@ const solutions = [
 	},
 	{
 		name: "Jeux",
-		description: "Application avec une interface ToDoList, Calendrier et Timer",
+		description: "Des jeux emblématiques mais fait part mes soins",
 		href: "/jeux",
 		icon: PuzzlePieceIcon,
 	},
 	{
 		name: "Projet 3",
-		description: "En construction",
+		description: "Conception d'un MVP pour Veever (En construction)",
 		href: "#",
 		icon: WrenchIcon,
 	},

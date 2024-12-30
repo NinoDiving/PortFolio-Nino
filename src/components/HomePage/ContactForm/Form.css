@@ -1,9 +1,5 @@
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
-  form{
-    width: 90%;
-    justify-self: center;
-  }
     .formcarry-container {
       width: 90%;
       box-sizing: border-box;
@@ -29,12 +25,21 @@
       --fc-field-hover-text-color: #B3B8D0;
 
       --fc-border-active-color: #1463FF;
+      opacity: 0;
+      transform: translateX(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
     }
 
     .formcarry-container * {
       box-sizing: border-box;
     }
 
+
+    .formcarry-container.active {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+    
     .formcarry-container label {
       display: block;
       cursor: pointer;

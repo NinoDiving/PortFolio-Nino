@@ -1,0 +1,11 @@
+.ProgressPage{
+  height: 100vh;
+  justify-items: center;
+  align-content: center;
+}
+
+.ProgressPage h1{
+  font-size: var(--font-title-sizeXL);
+  text-align: center;
+  margin: var(--padding-rem);
+}

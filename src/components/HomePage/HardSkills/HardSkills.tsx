@@ -15,7 +15,7 @@ export default function HardSkills() {
 							{" "}
 							<img
 								className="iconeSkills"
-								src="./src/assets/images/iconeHtml.png"
+								src="./src/assets/images/iconeHTML.svg"
 								alt="Html icone"
 							/>
 							HTML
@@ -24,7 +24,7 @@ export default function HardSkills() {
 							{" "}
 							<img
 								className="iconeSkills"
-								src="./src/assets/images/iconeCss.png"
+								src="./src/assets/images/iconeCSS.svg"
 								alt="Css icone"
 							/>
 							CSS
@@ -33,7 +33,7 @@ export default function HardSkills() {
 							{" "}
 							<img
 								className="iconeSkills"
-								src="./src/assets/images/iconeJs.png"
+								src="./src/assets/images/iconeJS.svg"
 								alt="Js icone"
 							/>
 							JavaScript
@@ -47,7 +47,7 @@ export default function HardSkills() {
 							{" "}
 							<img
 								className="iconeSkills"
-								src="./src/assets/images/iconeNode.png"
+								src="./src/assets/images/iconeNODE.svg"
 								alt="Node icone"
 							/>
 							Node.js
@@ -56,7 +56,7 @@ export default function HardSkills() {
 							{" "}
 							<img
 								className="iconeSkills"
-								src="./src/assets/images/iconeExpress.png"
+								src="./src/assets/images/iconeEXPRESS.svg"
 								alt="Express icone"
 							/>
 							Express.js
@@ -70,7 +70,7 @@ export default function HardSkills() {
 							{" "}
 							<img
 								className="iconeSkills"
-								src="./src/assets/images/iconeTypeScript.png"
+								src="./src/assets/images/iconeTYPESCRIPT.svg"
 								alt="TypeScript icone"
 							/>
 							TypeScript
@@ -79,7 +79,7 @@ export default function HardSkills() {
 							{" "}
 							<img
 								className="iconeSkills reactSpin"
-								src="./src/assets/images/iconeReact.png"
+								src="./src/assets/images/iconeREACT.svg"
 								alt=""
 							/>
 							React
@@ -88,7 +88,7 @@ export default function HardSkills() {
 							{" "}
 							<img
 								className="iconeSkills tailwindWave"
-								src="./src/assets/images/iconeTailwind.png"
+								src="./src/assets/images/iconeTAILWIND.svg"
 								alt="Tailwind icone"
 							/>
 							Tailwind
